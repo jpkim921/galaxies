@@ -39,11 +39,11 @@ def get_item(pageNum: int, itemNum: int):
 
     
 
-search_input = 'galaxy'
-col = search_collection()
-pageNum = get_rand_page(col)
-itemNum = get_rand_item(col)
-print(get_item(pageNum, itemNum))
+# search_input = 'galaxy'
+# col = search_collection()
+# pageNum = get_rand_page(col)
+# itemNum = get_rand_item(col)
+# print(get_item(pageNum, itemNum))
 
 
 
