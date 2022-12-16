@@ -1,4 +1,11 @@
+# GALAXIES
 
+Small app that uses NASA's api. Specifically NASA Image and Video Library. This little app is meant to help practice Flask and to access and serve API data. 
+
+https://api.nasa.gov/
+https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf
+
+Goal is to display images of galaxies taken by NASA in the past 5 years and to use javascript to automatially refresh the page with a new image every 5 or so seconds.
 
 
 ## Steps:
