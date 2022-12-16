@@ -1,6 +1,6 @@
 # GALAXIES
 
-Small app that uses NASA's api. Specifically NASA Image and Video Library. This little app is meant to help practice Flask and to access and serve API data. 
+Small app that uses NASA's api. Specifically NASA Image and Video Library. This little app is meant to help practice Flask and to access and serve API data. Will also use this to practice and review Javascript.
 
 https://api.nasa.gov/
 https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf
