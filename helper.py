@@ -21,7 +21,7 @@ def search_collection(pageNum=0, search_term="galaxy"):
 def get_item_count(collection):
     return collection['metadata']['total_hits']
 
-def get_rand_page(collection):
+def get_rand_pageNum(collection):
     total_items = get_item_count(collection)
     if total_items % 100 > 0:
         total_pages = (total_items // 100) + 1
@@ -29,21 +29,12 @@ def get_rand_page(collection):
     else:
         total_items // 100
 
-def get_rand_item(collection):
+def get_rand_itemNum(collection):
     total_items = len(collection['items'])
     return random.randint(0, total_items)
 
-def get_item(pageNum: int, itemNum: int):
+def get_item(collection):
+    pageNum = get_rand_pageNum(collection)
+    itemNum = get_rand_itemNum(collection)
     col = search_collection(pageNum=pageNum)
     return col['items'][itemNum]
-
-    
-
-# search_input = 'galaxy'
-# col = search_collection()
-# pageNum = get_rand_page(col)
-# itemNum = get_rand_item(col)
-# print(get_item(pageNum, itemNum))
-
-
-
