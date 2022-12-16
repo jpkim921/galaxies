@@ -1,6 +1,6 @@
 import time
 import requests
-from flask import Flask
+from flask import Flask, render_template
 from .helper import *
 
 app = Flask(__name__)
@@ -9,6 +9,7 @@ api_root = "https://images-api.nasa.gov"
 
 @app.route('/')
 def home():
+    
     collection = search_collection()
-    item = get_item(collection)
-    return item
+    context = build_context(collection)
+    return render_template('index.html', context=context)
