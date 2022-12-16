@@ -16,11 +16,6 @@ def search_collection(pageNum=0, search_term="galaxy"):
     }
 
     response = requests.get(search_url, params=params)
-    print("========")
-    print("========")
-    print("RESPONSE",response.url)
-    print("========")
-    print("========")
     collection = response.json()['collection']
     return collection
 
