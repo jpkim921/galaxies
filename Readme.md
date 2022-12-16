@@ -18,7 +18,7 @@ Goal is to display images of galaxies taken by NASA in the past 5 years and to u
     - [x] create context from item
 - [ ] Serve template
     - [x] display image, title, and photocredit
-    - [ ] use javascript to refresh the page with a new image every X seconds
+    - [X] use javascript to refresh the page with a new image every X seconds
 
 
 
