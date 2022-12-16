@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- <div class="container" style="width: 75%; height: auto;">
+    <img src="{{context.images[0]}}" class="img-fluid" alt="{{context.title}}">
+</div> -->
+<figure class="figure">
+    <img src="{{context.images[0]}}" class="rounded img-fluid" alt="{{context.title}}">
+    <figcaption class="figure-caption text-start">{{context.description}}</figcaption>
+  </figure>
+{% endblock %}
